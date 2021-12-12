@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <Practice ref="toPass"></Practice>
-    <br>
+    <hr>
+    <Share></Share>
+    <hr>
     <div class="display">
       <PracSlot :lists="foods" title="foods">
         <img src="../assets/food.webp" alt="food" slot="middle">
@@ -30,7 +32,8 @@
 
 <script>
 import Practice from "@/components/Practice";
-import PracSlot from "@/components/PracSlot"
+import PracSlot from "@/components/PracSlot";
+import Share from "@/components/Share";
 import pubsub from "pubsub-js"
 
 export default {
@@ -45,6 +48,7 @@ export default {
   components:{
     Practice,
     PracSlot,
+    Share,
   },
   mounted() {
     // this.$refs.toPass.$on("toPass",this.diyEvent)
