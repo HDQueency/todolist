@@ -13,6 +13,9 @@
                 :clearAll="clearAll"
                 :class="clean"
     ></TodoFooter>
+    <hr>
+    <HubCase></HubCase>
+    <HubList></HubList>
   </div>
 </template>
 
@@ -21,6 +24,8 @@
 import TodoHeader from '@/components/TodoHeader'
 import TodoList from '@/components/TodoList'
 import TodoFooter from '@/components/TodoFooter'
+import HubCase from "@/components/HubCase";
+import HubList from "@/components/HubList";
 import {nanoid} from 'nanoid'
 
 export default {
@@ -28,7 +33,9 @@ export default {
   components: {
     TodoHeader,
     TodoList,
-    TodoFooter
+    TodoFooter,
+    HubCase,
+    HubList,
   },
   data(){
     return{

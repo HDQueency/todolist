@@ -10,7 +10,7 @@
 export default {
   name: "BOTH",
   mounted() {
-    console.log(this.$route)
+    // console.log(this.$route)
   },
   props:["id","title"]
 }
