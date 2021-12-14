@@ -5,12 +5,18 @@
     <router-link :to="{name:'HD'}">hd</router-link> |
     <router-link to="wiz/gh">gh</router-link>
     <router-view></router-view>
+    <hr>
+    <Cart></Cart>
   </div>
 </template>
 
 <script>
+import Cart from "@/components/Cart";
 export default {
-name: "Wiz"
+  name: "Wiz",
+  components:{
+    Cart,
+  }
 }
 </script>
 
